@@ -2,11 +2,8 @@
 "__________________ vim-scrips-plugin ______________________
 "alternate
 "ctrlp
-"doxygen-toolkit
 "nerd-commenter
 "YoucompleteMe
-"fugitive
-"UltiSnips
 
 "***********************************************************
 "____________________ Common config ________________________
@@ -74,7 +71,6 @@ hi User9  ctermbg=6  ctermfg=0
 set statusline=%1*>>>>\ %{GetMode()}\ %2*\ %F\ %3*%m%r%w\ %9*\ %=\ 
 set statusline+=%-10(%l,%c%)\ %3*\ %{&fileformat}\ 
 set statusline+=%2*\ %{&fileencoding}\ %1*\ %Y\ 
-set statusline+=%4*\ %{fugitive#statusline()}\ 
 set statusline+=%9*\ %{strftime(\"%m-%d\ %H:%M\")}\ 
 
 "***********************************************************
@@ -122,32 +118,6 @@ let g:ycm_min_num_of_chars_for_completion=1
 let g:ycm_cache_omnifunc=0		
 let g:ycm_seed_identifiers_with_syntax=1
 
-"***********************************************************
-"____________________ UltiSnips ____________________________
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-"let g:UltiSnipsSnippetsDir = ["/home/source/repository/mysnippets"]
-"let g:UltiSnipsSnippetsDirectories = ["/home/source/repository/mysnippets"]
-
-"***********************************************************
-"_______________________ NERDTree __________________________
-map <F2> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrowExpandable ='+'
-let g:NERDTreeDirArrowCollapsible = '-'
-
-
-"***********************************************************
-"_______________________ Tagbar ____________________________
-map <F3> :TagbarToggle<CR>
-let g:tagbar_ctags_bin = '/usr/bin/ctags'
-let g:tagbar_iconchars = ['+', '-']
-"set g:tagbar_width=30
-
-"***********************************************************
-"______________________ AutoPair ___________________________
-let g:AutoPairsShortcutFastWrap = 'e'
-let g:AutoPairsShortcutJump = 'j'
 
 "***********************************************************
 "_____________________ alternate ___________________________
